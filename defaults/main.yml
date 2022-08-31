@@ -1,0 +1,7 @@
+---
+key_directory: "~/.ssh"
+key_rsa: "id_rsa"
+key_dsa: id_dsa
+key_ecdsa: "id_ecdsa"
+key_ed25519: "id_ed25519"
+ssh_key_comment: "ansible-ssh-key"

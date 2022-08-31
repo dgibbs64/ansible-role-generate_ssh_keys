@@ -1,0 +1,31 @@
+---
+galaxy_info:
+  author: Daniel Gibbs
+  company: none
+  description: Generate SSH keys for Ansible contol node user.
+  license: MIT
+  min_ansible_version: "2.10"
+  namespace: dgibbs64
+  role_name: generate_ssh_keys
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+  galaxy_tags:
+    - bootstrap
+    - system
+
+dependencies: []
