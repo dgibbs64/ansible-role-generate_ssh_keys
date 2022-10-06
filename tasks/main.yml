@@ -6,7 +6,7 @@
     state: "directory"
     mode: "0600"
 
-- name: ensure SSH keys are generated
+- name: "Ensure SSH keys are generated"
   local_action:
     module: community.crypto.openssh_keypair
     type: "{{ item.type }}"
