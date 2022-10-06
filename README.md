@@ -39,5 +39,5 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   gather_facts: false
 
   roles:
-    - role: ansible-role-generate_ssh_keys
+    - role: dgibbs64.generate_ssh_keys
 ```
