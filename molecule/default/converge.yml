@@ -4,4 +4,4 @@
   gather_facts: false
 
   roles:
-    - role: ansible-role-generate-ssh-keys
+    - role: ansible-role-generate_ssh_keys
