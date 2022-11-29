@@ -1,7 +1,6 @@
 ---
-- name: converge
+- name: "Converge"
   hosts: all
-  gather_facts: false
 
   roles:
-    - role: ansible-role-generate_ssh_keys
+    - role: "dgibbs64.generate_ssh_keys"
