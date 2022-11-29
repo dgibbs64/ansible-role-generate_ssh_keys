@@ -6,7 +6,7 @@ lint: |
   yamllint .
   ansible-lint
 platforms:
-  - name: "linux_admin_packages-${MOLECULE_IMAGE:-ubuntu2204}"
+  - name: "generate_ssh_keys-${MOLECULE_IMAGE:-ubuntu2204}"
     image: "geerlingguy/docker-${MOLECULE_IMAGE:-ubuntu2204}-ansible:latest"
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     volumes:
