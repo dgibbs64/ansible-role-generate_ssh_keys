@@ -41,7 +41,7 @@ None.
 
 This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
 
-```
+```yaml
 ---
 - name: converge
   hosts: all
