@@ -1,4 +1,6 @@
 ---
+# defaults file for ansible-ssh-key
+
 key_directory: "~/.ssh"
 key_rsa: "id_rsa"
 key_dsa: id_dsa
