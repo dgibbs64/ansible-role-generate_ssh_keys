@@ -12,7 +12,7 @@
     mode: "0600"
     comment: "{{ ssh_key_comment }}"
     path: "{{ item.path }}"
-
+  delegate_to: "localhost"
   loop:
     - "{path: '{{ key_rsa }}', type: 'rsa'}"
     - "{path: '{{ key_dsa }}', type: 'dsa'}"
