@@ -1,20 +1,20 @@
 ---
 - name: "Ensure key directory exists"
-  local_action:
-    module: ansible.builtin.file
+  ansible.builtin.file:
     path: "{{ key_directory }}"
     state: "directory"
     mode: "0600"
+  delegate_to: "localhost"
 
 - name: "Ensure SSH keys are generated"
-  local_action:
-    module: community.crypto.openssh_keypair
+  community.crypto.openssh_keypair:
     type: "{{ item.type }}"
     mode: "0600"
     comment: "{{ ssh_key_comment }}"
     path: "{{ item.path }}"
+
   loop:
-    - { path: "{{ key_rsa }}", type: "rsa" }
-    - { path: "{{ key_dsa }}", type: "dsa" }
-    - { path: "{{ key_ecdsa }}", type: "ecdsa" }
-    - { path: "{{ key_ed25519 }}", type: "ed25519" }
+    - "{path: '{{ key_rsa }}', type: 'rsa'}"
+    - "{path: '{{ key_dsa }}', type: 'dsa'}"
+    - "{path: '{{ key_ecdsa }}', type: 'ecdsa'}"
+    - "{path: '{{ key_ed25519 }}', type: 'ed25519'}"
