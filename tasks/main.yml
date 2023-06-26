@@ -14,7 +14,7 @@
     path: "{{ item.path }}"
   delegate_to: "localhost"
   loop:
-    - "{path: '{{ key_rsa }}', type: 'rsa'}"
-    - "{path: '{{ key_dsa }}', type: 'dsa'}"
-    - "{path: '{{ key_ecdsa }}', type: 'ecdsa'}"
-    - "{path: '{{ key_ed25519 }}', type: 'ed25519'}"
+    - { path: "{{ key_rsa }}", type: "rsa" }
+    - { path: "{{ key_dsa }}", type: "dsa" }
+    - { path: "{{ key_ecdsa }}", type: "ecdsa" }
+    - { path: "{{ key_ed25519 }}", type: "ed25519" }
